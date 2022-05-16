@@ -28,12 +28,21 @@ function clearItem(){
 }
 
 
-btn.addEventListener("click", newItem);
-function newItem(){
-
-    myMenu.innerHTML += "<li> new line " + counter +"</li>" 
-    counter++;
+btn.addEventListener("click", myFunction);
+function myFunction(){
+    var ul = document.getElementById("menu");
+    var li = document.createElement("li")
+    var newItem = prompt("Write a new line", "New title");
+    li.appendChild(document.createTextNode(newItem));
+    ul.appendChild(li);
 }
+
+// btn.addEventListener("click", newItem);
+// function newItem(){
+
+//     myMenu.innerHTML += "<li> new line " + counter +"</li>" 
+//     counter++;
+// }
 
 // function newItem(){
 //     let text;
