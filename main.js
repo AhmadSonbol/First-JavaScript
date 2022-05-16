@@ -29,17 +29,23 @@ function clearItem(){
 
 
 btn.addEventListener("click", newItem);
-
 function newItem(){
-    let text;
-    let line = prompt("Enter your new line:", "New Line");
-    if (line == null || line == "") {
-        text = "User cancelled the prompt.";
-      } else {
-        text = line;
-      }
-    myMenu.innerHTML +=  text;
+
+    myMenu.innerHTML += "<li> new line " + counter +"</li>" 
+    counter++;
 }
+
+// function newItem(){
+//     let text;
+//     let line = prompt("Enter your new line:", "New Line");
+//     if (line == null || line == "") {
+//         text = "User cancelled the prompt.";
+//       } else {
+//         text = line;
+//       }
+//     myMenu.innerHTML +=  text;
+// }
+
 
 
 
