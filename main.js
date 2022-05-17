@@ -35,6 +35,11 @@ function myFunction(){
     var newItem = prompt("Write a new line", "New title");
     li.appendChild(document.createTextNode(newItem));
     ul.appendChild(li);
+    if (newItem == null || newItem == "") {
+    text = "usrr";
+    } else {
+    text = newItem;
+    }
 }
 
 // btn.addEventListener("click", newItem);
